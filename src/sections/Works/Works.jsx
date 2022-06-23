@@ -21,13 +21,7 @@ function Works() {
                 <Grid item xs={12} md={12}>
                     <Typography 
                         variant='h5'
-                        sx={{
-                            mt: 2,
-                            mb: 4,
-                            fontFamily: 'Oxygen, sans-serif',
-                            fontWeight: '300',
-                            textAlign: 'center',
-                        }}
+                        className="m-1 mb-2 font-medium text-center font-['Oxygen']"
                     >
                         Worked with clients accross the globe. Mostly UK, US & Europe. As per the terms of customer I should not share the original URLs but below are the concepts where I contributed as a developer.
                     </Typography>
@@ -46,12 +40,7 @@ function Works() {
                                                 image={el.projectImage}
                                                 alt="project image"
                                             />
-                                            <CardContent
-                                                sx={{
-                                                    backgroundImage: 'url("https://i.pinimg.com/originals/6d/35/ea/6d35ea77a917bc57c35bee326081adb5.png")',
-                                                    backgroundPositionY: '21%',
-                                                }}
-                                            >
+                                            <CardContent className="bg-[url('https://i.pinimg.com/originals/6d/35/ea/6d35ea77a917bc57c35bee326081adb5.png')] bg-[left_19%]">
                                                 <Typography gutterBottom variant="h5" component="div">
                                                     <div className='flex justify-between'>
                                                         <div className='text-xl my-2 font-medium font-["Oxygen"] text-primary'>{el.projectName}</div>
@@ -77,7 +66,7 @@ function Works() {
                 <Grid item xs={12} md={12}>
                     <Typography 
                         variant='h6'
-                        className="m-1 mb-2 font-light text-center font-['Oxygen']"
+                        className="mb-2 font-light text-center font-['Oxygen']"
                     >
                         Domains, I am experienced with
                     </Typography>
@@ -85,14 +74,7 @@ function Works() {
                         {
                             getProjectDomain().map((el) => {
                                 return (
-                                    <Chip label={el} sx={{ 
-                                        border: '1px solid #ed4747',
-                                        color: '#fff',
-                                        backgroundColor: '#ed4747',
-                                        '&:hover': {
-                                            backgroundColor: 'red',
-                                          },
-                                    }}/>
+                                    <Chip label={el} className="border-1 bg-secondary hover:bg-[red] text-[#fff]"/>
                                 )
                             })
                         }                  
