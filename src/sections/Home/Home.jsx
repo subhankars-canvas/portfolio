@@ -7,8 +7,8 @@ function Home() {
         <>
             <Grid container spacing={2} className="bg-dark-blue text-pure-white -mb-19">
                 <Grid item xs={12} md={5}>
-                    <p className='font-light text-7xl m-4 p-4'>Subhankar Roy.</p>
-                    <p className='font-light mx-6 p-2 capitalize'>A 6+ Years experienced UI/UX pro. Open to learn, never settle, &#10084;&#65039; R&D. Worked with clients cross the country.Agile Expert.Certified React JS developer. Spot lighted and awarded Many times for leadership skills. Love to drive, passionate for badminton. </p>
+                    <p className="font-light text-7xl m-4 p-4 font-['Oxygen']">Subhankar Roy.</p>
+                    <p className="mx-8 font-light text-lg font-['Oxygen'] capitalize">A 6+ Years experienced UI/UX pro. Open to learn, never settle, &#10084;&#65039; R&D. Worked with clients cross the country.Agile Expert.Certified React JS developer. Spot lighted and awarded Many times for leadership skills. Love to drive, passionate for badminton. </p>
                     <Button variant="contained" className="bg-secondary hover:bg-[red] m-6">Let's Talk</Button>
                 </Grid>
                 <Grid item xs={12} md={7}>

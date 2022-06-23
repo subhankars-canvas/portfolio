@@ -21,7 +21,7 @@ function Works() {
                 <Grid item xs={12} md={12}>
                     <Typography 
                         variant='h5'
-                        className="m-1 mb-2 font-medium text-center font-['Oxygen']"
+                        className="m-1 mb-2 font-medium text-center font-['Oxygen', 'sans-serif']"
                     >
                         Worked with clients accross the globe. Mostly UK, US & Europe. As per the terms of customer I should not share the original URLs but below are the concepts where I contributed as a developer.
                     </Typography>
@@ -70,7 +70,7 @@ function Works() {
                     >
                         Domains, I am experienced with
                     </Typography>
-                    <Stack direction="row" justifyContent="center" alignItems="center" spacing={1} m={2}>
+                    <Stack direction="row" justifyContent="center" alignItems="center" spacing={1} m={2} mb={4}>
                         {
                             getProjectDomain().map((el) => {
                                 return (
