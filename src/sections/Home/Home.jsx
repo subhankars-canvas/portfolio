@@ -1,26 +1,17 @@
 import React from 'react'
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
-import { styled } from '@mui/material/styles';
 
-const ColorButton = styled(Button)(({ theme }) => ({
-    color: '#fff',
-    backgroundColor: '#ed4747',
-    margin: '1.5rem',
-    '&:hover': {
-      backgroundColor: 'red',
-    },
-  }));
 function Home() {
     return (
         <>
             <Grid container spacing={2} className="bg-dark-blue text-pure-white -mb-19">
-                <Grid item xs={5}>
-                    <p className='font-light text-7xl m-4 p-4'>Subhankar Roy.</p>
-                    <p className='font-light mx-6 p-2 capitalize'>A 6+ Years experienced UI/UX pro. Open to learn, never settle, &#10084;&#65039; R&D. Worked with clients cross the country.Agile Expert.Certified React JS developer. Spot lighted and awarded Many times for leadership skills. Love to drive, passionate for badminton. </p>
-                    <ColorButton variant="contained">Let's Talk</ColorButton>
+                <Grid item xs={12} md={5}>
+                    <p className="font-light text-7xl m-4 p-4 font-['Oxygen']">Subhankar Roy.</p>
+                    <p className="mx-8 font-light text-lg font-['Oxygen'] capitalize">A 6+ Years experienced UI/UX pro. Open to learn, never settle, &#10084;&#65039; R&D. Worked with clients cross the country.Agile Expert.Certified React JS developer. Spot lighted and awarded Many times for leadership skills. Love to drive, passionate for badminton. </p>
+                    <Button variant="contained" className="bg-secondary hover:bg-[red] m-6">Let's Talk</Button>
                 </Grid>
-                <Grid item xs={7}>
+                <Grid item xs={12} md={7}>
                     <img src='https://cdn.mos.cms.futurecdn.net/2oAg4jv2w9rstTsMVmGdCU.jpg'/>
                 </Grid>
             </Grid>

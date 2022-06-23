@@ -54,3 +54,86 @@ export function getTechs() {
         {techName: 'Linux/Shell Scripting', icon: 'https://cdn3.iconfinder.com/data/icons/blue-ulitto/128/Developer_files_Bash_Shell_Script-512.png'},
     ]
 }
+
+export function getCaraouselSettings() {
+    const settings = {
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 2000,
+        cssEase: "linear",
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: false
+            }
+          },
+          {
+            breakpoint: 640,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+    }
+    return settings
+}
+
+export function getProjectDetails() {
+    return [
+        {
+            projectName: 'Operationas Dashboard',
+            projectDescription: 'Operations Dashboard is a project which is built in React. It basically has a dashboard after login you get into there. Our customer has stores accross the United Kingdom and this dashboard helps customer to get a full overview of business based on big data. Dashboard has jobs section where it shows the ongoing, upcmoing and delayed or on time or ahead jobs. Api gets a hit in every 5 minutes to plot the absolute clear image of these types of jobs in a graphical way as well as tabular format. Operations dashboard shows the data by the 12 hours business clock. There is also option to fetch the old data as per date and time. Global Search, Job prediction based on forecast data are the other key features of this dashboard.',
+            projectURL: 'https://www.tcs.com',
+            projectImage: 'https://www.softwareadvice.com/resources/wp-content/uploads/RetailStoreOperationsIcons.png',
+            projectDomain: 'Retail'
+        },
+        {
+            projectName: 'Retail Store business',
+            projectDescription: 'Retail store business is a project which has been built in React. In this project there were multiple type of login methods. One can login using google, otp based login and normal creds. There were two type of users. One is who is running the business and another one is super admin. The business runner can see the stock, can serach , can sale, can take payments. But the super user can see the forecast, can see the accumulative sales. And based on forecast can avail the items in a store. We worked on forecast indirectly as well for its betterment from 35% to 72%. Super user can even see the sites accross the map of United States.',
+            projectURL: 'https://www.tcs.com',
+            projectImage: 'https://www.softwareadvice.com/resources/wp-content/uploads/RetailStoreOperationsIcons.png',
+            projectDomain: 'Retail'
+        },
+        {
+            projectName: 'Text Me',
+            projectDescription: 'Text me the altered name as there might be copyright issue from the customer. Text me basically a platform which generate you genuine leads or can filter your already present leads. This app is paid service for the customer who got login the admin panel can buy phone numbers or can top up them using Twillio API. Once you upload your N number of phone numbers to verify and can select a specific time. Behind the scene off screen the cronjob will do the work. There is IVR which will get each record, call them verify them after connecting and will give you a fresh set of records. It has multiple other features too. Ivr customization, con call set, Mailer using MailChimp tool. Most of it is automated. It also can assign sub accounts to the affiliates of the original master account.',
+            projectURL: 'https://www.tier5.in/',
+            projectImage: 'https://images.tmcnet.com/tmc/misc/articles/image/2021-nov/0524598558-AdobeStock_334127391_hybird_workforce_SUPERSIZE.jpg',
+            projectDomain: 'Digital'
+        },
+        {
+            projectName: 'Chat Bots & Analytics',
+            projectDescription: 'This project was for an Asian client who has a educational website, where people can come and get courses to upskill temselves. But the customer sees a less convertion ratio. So we developed a chatbot using the tool manychat for better conversion. This tool gives you a custom javascript which you have to paste at the <script> tag of bottom of your page. And when a person visits the website it just guides how to do what just like a automated sitemap kind of thing. But this does not resolve the purpose fully. So we created our own custom javascript snippet attaching that with the manychat bot will give you the full site analytics and also catagorize the students in various channels which will grow the sales pitching them the particular course at a lesser price.',
+            projectURL: 'https://www.tier5.in',
+            projectImage: 'https://www.haptik.ai/hubfs/%5BBlog%5D%20-%20Top%2010%20AI%20chatbots/Header-7-preview.png',
+            projectDomain: 'Education'
+        },
+        {
+    
+            projectName: 'EasyStore',
+            projectDescription: 'EasyStore is a tcs product for all retailers out there. Worked for a Europian client. The features easystore emits are Employee check in , check out , scanning stuffs, offer, generate bills, coupons, generating invoices. Refund, Return everything under the same hood of the software. It has been built in Angular js. But as it is deprecated and many drawbacks are there we migrated the whole software in react. The masterdata has the full set of records that what items are available and at what quantity after everydays sale. It was a boom product of tcs. Customer accross the world bought this and devs get chance to work with this amazing product.',
+            projectURL: 'https://www.tcs.com',
+            projectImage: 'https://www.softwareadvice.com/resources/wp-content/uploads/RetailStoreOperationsIcons.png',
+            projectDomain: 'Retail'
+        },
+    ]
+}
+export function getProjectDomain() {
+    return ['Retail', 'Education', 'Digital', 'Banking', 'Finance']
+}

@@ -7,19 +7,11 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import { getJobDetails, getTechs } from '../../utils/utils'
-import { styled } from '@mui/material/styles';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import Tooltip from '@mui/material/Tooltip';
+import DividerComponent from '../../components/DividerComponent'
 
-
-const ColorButton = styled(Button)(({ theme }) => ({
-    color: '#fff',
-    backgroundColor: '#ed4747',
-    '&:hover': {
-      backgroundColor: 'red',
-    },
-  }));
 function Experience() {
     return (
         <>
@@ -27,22 +19,18 @@ function Experience() {
                 <Grid item xs="12">
                     <Typography 
                         variant='h5'
-                        sx={{
-                            mb: 4,
-                            fontFamily: 'Oxygen',
-                            fontWeight: '300',
-                            textAlign: 'center',
-                        }}
+                        className="m-1 mb-2 font-medium text-center font-['Oxygen']"
                     >
                         A full stack developer experieced in Javascript frameworks as well as in backend techs like PHP, Laravel, MySql. Self made journey begins with Tier5 Technology Solutions Pvt. Ltd and right now at Larsen & Toubro group of Company.
                     </Typography>
+                    <DividerComponent color="#314955"/>
                 </Grid>
             </Grid>
             <Grid container spacing={1} className="p-4">
                 {
                     getJobDetails().map((el,i, arr) => {
                         return (
-                        <Grid item xs={4}>
+                        <Grid item xs={12} md={4}>
                             <Card className="border-2 border-[#bdbfc3]">
                                 <CardMedia
                                     component="img"
@@ -62,10 +50,10 @@ function Experience() {
                                             <img src={el.companyLogo} alt="logo"/>
                                         </div>
                                     </div>
-                                    <Typography variant="body2" color="text.secondary" className='font-inherit'>{el.role}</Typography>
+                                    <Typography variant="body2" color="text.secondary" className="font-['Oxygen'] font-semibold">{el.role}</Typography>
                                 </CardContent>
                                 <CardActions>
-                                    <ColorButton variant="contained">Learn More</ColorButton>
+                                    <Button variant="contained" className="bg-secondary hover:bg-[red]">Learn More</Button>
                                 </CardActions>
                             </Card>
                         </Grid>)
@@ -73,21 +61,16 @@ function Experience() {
                 }
             </Grid>
             <Grid container spacing={2} className="p-4">
-                <Grid item xs="12">
+                <Grid item xs={12} md={12}>
                     <Typography 
                         variant='h6'
-                        sx={{
-                            mb: 4,
-                            fontFamily: 'Oxygen',
-                            fontWeight: '300',
-                            textAlign: 'center',
-                        }}
+                        className="m-1 mb-2 font-light text-center font-['Oxygen']"
                     >
                         Techs I am aware of.
                     </Typography>
                 </Grid>
-                <Grid item xs="12">
-                    <Stack direction="row" spacing={2} alignItems="center" justifyContent="center">
+                <Grid item xs={12}>
+                    <Stack direction="row" spacing={2} alignItems="center" justifyContent="center" mb={4}>
                         {
                             getTechs().map((el, i, arr) => {
                                 return (
