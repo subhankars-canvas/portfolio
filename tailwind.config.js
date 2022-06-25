@@ -11,6 +11,9 @@ module.exports = {
         'primary': '#314955',
         'secondary': '#ed4747'
       },
+      backgroundImage: {
+        'home-background': "url('/src/assets/home-background.jpg')",
+      }
     },
   },
   plugins: [],
