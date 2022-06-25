@@ -7,6 +7,21 @@
     font-family: 'Montserrat', sans-serif !important;
   }
 }
+
+.fixed-height-content {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+.custom-card {
+  max-width: 400px;
+  border: 1px solid #161e21;
+  border-radius: 0;
+  background: transparent;
+}
 * {
   margin: 0;
   padding: 0;

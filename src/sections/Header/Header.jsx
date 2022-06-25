@@ -33,7 +33,7 @@ const Header = () => {
         </li>        
         {
             showMenuFlag && pages.map((el,i) => {
-                return <li key={i} className="inline-block top-5 m-6 text-pure-white font-light uppercase cursor-pointer float-right">{el}</li>
+                return <li key={i} className="inline-block top-5 m-6 text-pure-white font-semibold uppercase cursor-pointer float-right">{el}</li>
             })
         }
     </ul>

@@ -11,8 +11,8 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 function App() {
     const theme = createTheme({
         typography: {
-         "fontFamily": `Montserrat, sans-serif`,
-        }
+            "fontFamily": `Montserrat, sans-serif`,
+        },
      });
 
     return (

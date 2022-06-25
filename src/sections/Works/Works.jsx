@@ -17,45 +17,51 @@ function Works() {
     const {...settings} = getCaraouselSettings()
     return (
         <>
-            <Grid container spacing={2} className="bg-primary text-pure-white">
+            <Grid container spacing={2} className="bg-white text-pure-white">
                 <Grid item xs={12} md={12}>
                     <Typography 
                         variant='h5'
-                        className="m-1 mb-2 font-medium text-center font-['Oxygen', 'sans-serif']"
+                        className="mt-8 mb-2 font-medium text-center text-primary"
                     >
                         Worked with clients accross the globe. Mostly UK, US & Europe. As per the terms of customer I should not share the original URLs but below are the concepts where I contributed as a developer.
                     </Typography>
-                    <DividerComponent color="#ed4747"/>
+                    <DividerComponent color="#161e21"/>
                 </Grid>
                 <Grid item xs={12} md={12} className="overflow-hidden">
                     <Slider {...settings}>
                         { 
                             getProjectDetails().map((el) => {
                                 return (
-                                    <Card sx={{ maxWidth: 400 }}>
+                                    <Card className="custom-card">
                                         <CardActionArea>
-                                            <CardMedia
-                                                component="img"
-                                                height="140"
-                                                image={el.projectImage}
-                                                alt="project image"
-                                            />
-                                            <CardContent className="bg-[url('https://i.pinimg.com/originals/6d/35/ea/6d35ea77a917bc57c35bee326081adb5.png')] bg-[left_19%]">
+                                            <CardContent>
                                                 <Typography gutterBottom variant="h5" component="div">
                                                     <div className='flex justify-between'>
-                                                        <div className='text-xl my-2 font-medium font-["Oxygen"] text-primary'>{el.projectName}</div>
-                                                        <div className='text-sm my-2 font-sm bg-secondary text-[#fff] py-1 px-2 capitalize rounded-2xl'>
-                                                            {el.projectDomain}
-                                                        </div>
+                                                        <div className='text-xl my-2 font-medium text-primary'>{el.projectName}</div>
+                                                        
+                                                        <Chip label={el.projectDomain} variant="outlined" className='border-1 border-primary'/>
                                                     </div>
                                                 </Typography>
-                                                <Typography variant="body2" color="text.secondary" className="font-['Oxygen'] font-semibold">
+
+                                                <Typography variant="body2" color="text.secondary" className="font-semibold fixed-height-content">
                                                     {el.projectDescription}
                                                 </Typography>
+
                                             </CardContent>
                                         </CardActionArea>
-                                        <CardActions className="bg-[#f4e2f2]">
-                                            <Button variant="contained" className="bg-secondary hover:bg-[red]">Learn More</Button>
+                                        <CardActions>
+                                            <Button variant="contained" sx ={{
+                                                border: '2px solid #161e21',
+                                                background: '#161e21 !important',
+                                                color: '#fff',
+                                                borderRadius: 0,
+                                                fontWeight: 600,
+                                                '&:hover': {
+                                                    border: '2px solid #161e21',
+                                                    background: '#fff !important',
+                                                    color: '#161e21'
+                                                }
+                                            }}>Read More</Button>
                                         </CardActions>
                                     </Card>
                                 )
@@ -66,7 +72,7 @@ function Works() {
                 <Grid item xs={12} md={12}>
                     <Typography 
                         variant='h6'
-                        className="mb-2 font-light text-center font-['Oxygen']"
+                        className="mb-2 font-light text-center"
                     >
                         Domains, I am experienced with
                     </Typography>
@@ -74,7 +80,7 @@ function Works() {
                         {
                             getProjectDomain().map((el) => {
                                 return (
-                                    <Chip label={el} className="border-1 bg-secondary hover:bg-[red] text-[#fff]"/>
+                                    <Chip label={el} variant="outlined" className="border-1 border-primary"/>
                                 )
                             })
                         }                  

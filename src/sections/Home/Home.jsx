@@ -5,14 +5,14 @@ import Stack from '@mui/material/Stack';
 import Header from '../../sections/Header'
 import Typography from '@mui/material/Typography';
 import LinkedinIcon from '../../assets/linkedin-icon-filled.png';
-import FbIcon from '../../assets/linkedin-icon-filled.png';
+import FbIcon from '../../assets/facebook-icon-filled.png';
 import GithubIcon from '../../assets/github-icon-filled.png';
 import DsIcon from '../../assets/downscroll-outlined.png';
 
 function Home() {
     return (
         <>
-            <Grid container spacing={2} className="bg-home-background bg-no-repeat bg-cover bg-fixed h-[110vh] text-pure-white mb-5">
+            <Grid container spacing={2} className="bg-home-background bg-no-repeat bg-cover bg-fixed h-[110vh] text-pure-white">
                 <Grid item xs={12} md={12}>
                     <Header/>
                 </Grid>
@@ -29,7 +29,7 @@ function Home() {
                 </Grid>
                 <Grid item xs={12} md={12}>
                     <Stack direction="row" spacing={2} alignItems="center" justifyContent="center" mb={4}>
-                        <Avatar alt='linkedin' src={LinkedinIcon}/>
+                        <Avatar alt='linkedin' src={LinkedinIcon} className="border border-white"/>
                         <Avatar alt='facebook' src={FbIcon}/>
                         <Avatar alt='github' src={GithubIcon}/>
                     </Stack>
