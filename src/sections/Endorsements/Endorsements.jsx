@@ -20,7 +20,7 @@ function Endorsements() {
             </Grid>
             <Grid item xs="12" md="12" className="text-center">
                 <Box>
-                    <div className="text-center relative mt-20">
+                    <div className="text-center relative mt-10">
                         <Avatar 
                             alt="Remy Sharp" 
                             src="https://media-exp1.licdn.com/dms/image/D4D35AQH5V-SC7lAxwA/profile-framedphoto-shrink_800_800/0/1648301349166?e=1656622800&v=beta&t=Wrjy6OW3sCEF1UlsMkco_yrcgDZznE4mnF1sWFpz5_s" 
@@ -52,7 +52,7 @@ function Endorsements() {
                         <p className="text-center font-medium text-lg p-4">I worked with Subhankar in the same account but different teams. He is a great UI developer and used to play an important part in his team. He is a good team player with excellent leadership qualities. Wish you all the best for your future.</p>
                 </Box>
             </Grid>
-            <Grid item xs="12" md="12" className="text-center">
+            <Grid item xs="12" md="12" className="text-center mb-10">
                 <Box>
                     <div className="text-center relative mt-20">
                         <Avatar 

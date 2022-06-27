@@ -13,6 +13,11 @@ function App() {
         typography: {
             "fontFamily": `Montserrat, sans-serif`,
         },
+        palette: {
+            neutral: {
+              main: '#fff',
+            },
+        },
      });
 
     return (
